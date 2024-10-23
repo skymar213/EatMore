@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="165dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardFood"
+    android:layout_height="205dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginRight="20dp"
+    app:cardCornerRadius="30dp">
+
+    <LinearLayout
+        android:id="@+id/llBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/launcher_image"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/imgFood"
+            android:layout_width="120dp"
+            android:layout_height="95dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            tools:background="@drawable/pizza_1"
+
+            />
+
+        <TextView
+            android:id="@+id/txtFoodTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pizza"
+            android:textSize="18dp"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <RatingBar
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:numStars="5"
+            tools:rating="4.5"
+            android:progressTint="@color/yellow"
+            android:secondaryProgressTint="@color/yellow"
+            android:layout_height="16dp"
+            android:layout_marginLeft="15dp"
+            style="@style/Widget.AppCompat.RatingBar.Small"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/txtPrice"
+            android:text="$15"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content"/>
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
